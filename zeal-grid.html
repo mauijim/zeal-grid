@@ -10,7 +10,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../iron-flex-layout/classes/iron-flex-layout.html">
 <link rel="import" href="../iron-flex-layout/iron-flex-layout.html">
-<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../zeal-griditem/zeal-griditem.html">
 
 <!--
 An element providing a solution to no problem in particular.
@@ -38,9 +38,32 @@ Example:
       }
 
       zeal-griditem {
-        min-width: 50%;
-        max-width: 50%;
+        min-width: 100%;
+        max-width: 100%;
         @apply(--layout-flex);
+      }
+
+      /* desktop-small-landscape */
+      @media all and (min-width: 481px) {
+        zeal-griditem {
+          min-width: 50%;
+          max-width: 50%;
+        }
+      }
+      /* tablet-large-landscape */
+      @media all and (min-width: 961px) {
+        zeal-griditem {
+          min-width: 33%;
+          max-width: 33%;
+        }
+      }
+
+      /* desktop-large */
+      @media all and (min-width: 1281px) {
+        zeal-griditem {
+          min-width: 25%;
+          max-width: 25%;
+        }
       }
 
     </style>
