@@ -2,27 +2,39 @@
   "name": "zeal-grid",
   "version": "1.0.3",
   "authors": [
-    "Anonymous <anonymous@example.com>"
+    "Max Leitch <mjleitch@gmail.com>"
   ],
-  "description": "An element providing a solution to no problem in particular.",
+  "description": "Displays child elements in a flexbox grid view.",
   "keywords": [
-    "web-component",
+    "zeal-optics",
     "polymer",
-    "seed"
+    "web-component",
+    "layout",
+    "grid"
   ],
   "main": "zeal-grid.html",
-  "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "license": "https://github.com/mauijim/zeal-grid/LICENSE.txt",
+  "homepage": "https://github.com/mauijim/zeal-grid/",
   "ignore": [
     "/.*",
-    "/test/"
+    "/test/",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.1.0",
-    "iron-ajax": "PolymerElements/iron-ajax#~1.1.1"
+    "iron-ajax": "PolymerElements/iron-ajax#~1.1.1",
+    "zeal-griditem": {
+      "type": "git",
+      "url": "git://github.com/mauijim/zeal-griditem.git"
+    }
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
     "web-component-tester": "*"
-  }
+  },
+  "moduleType": []
 }
